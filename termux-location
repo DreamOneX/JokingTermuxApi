@@ -1,0 +1,8 @@
+#!/usr/bin/python
+import json
+import argparse
+
+parse = argparse.ArgumentParser(description="Get the device location.")
+parse.add_argument()
+
+DATA = {"latitude": 81.191900,"longitude": 114.514810,"altitude": 1.1,"accuracy": 45.1,"vertical_accuracy": 4.1,"bearing": 1.4,"speed": 5.1, "elapsedMs": 41,"provider": "810fucker"}
