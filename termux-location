@@ -7,6 +7,8 @@ DATA = {"latitude": 81.191900,"longitude": 114.514810,"altitude": 1.1,"accuracy"
 def main():
     global DATA
     parser = argparse.ArgumentParser(prog="termux-location", description="Get the device location.")
+    parser.add_argument('-p', metavar='provider', help='location provider [gps/network/passive] (default: gps)')
+    parser.add_argument('-r', metavar='request', help='kind of request to make [once/last/updates] (default: once)')
     args = parser.parse_args()
     # parse.add_argument()
     return json.dumps(DATA, indent=2)
